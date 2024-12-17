@@ -5,9 +5,9 @@ import { CommonModule } from '@angular/common';
 
 
 @Component({
-  selector: 'app-register-form',
-  templateUrl: './register-form.component.html',
-  styleUrls: ['./register-form.component.css'],
+  selector: 'app-registrar-form',
+  templateUrl: './registrar-form.component.html',
+  styleUrls: ['./registrar-form.component.css'],
 })
 export class RegistrarFormComponent {
   username: string = '';

@@ -1,0 +1,18 @@
+- [ ] Tarea 1
+- [x] Tarea 2 (completada)
+
+
+VARIABLES: 
+
+- my_secure_root_password ->autodescriptiva 
+- db -> nombre del docker
+
+
+COMANDOS:
+
+- Cnstruir: docker build -t db .
+- Correr: docker run -d   --name db   -e MYSQL_ROOT_PASSWORD=my_secure_root_password   -e MYSQL_DATABASE=my_database   -e MYSQL_USER=my_user   -e MYSQL_PASSWORD=my_secure_user_password   -p 3306:3306   mysql:8.0
+- acceder al entorno: docker exec -it db sh
+- Crea una base de datos para usuario sa segun el archivo adjunto "copia"
+
+![Vista esquemática](esquema.png)
