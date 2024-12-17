@@ -6,13 +6,13 @@ import { switchMap } from 'rxjs/operators';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-juego',
+  selector: 'app-tareas',
   standalone: true,
-  templateUrl: './juego.component.html',
-  styleUrls: ['./juego.component.css'],
+  templateUrl: './tareas.component.html',
+  styleUrls: ['./tareas.component.css'],
   imports: [CommonModule]
 })
-export class JuegoComponent implements OnInit, OnDestroy {
+export class TareasComponent implements OnInit, OnDestroy {
   code: string | null = null;
   playerName: string | null = null;
   movimiento: number = 0; // Asigna un valor por defecto o actualízalo según sea necesario

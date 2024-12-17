@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
-import { JugadorFormComponent } from './jugador-form/jugador-form.component';
-import { CodigoFormComponent } from './codigo-form/codigo-form.component';
-import { JuegoComponent } from './juego/juego.component';
+import { LoginFormComponent } from './login/login-form.component';
+import { RegistrarFormComponent } from './registrar/registrar-form.component';
+import { TareasComponent } from './tareas/tareas.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/jugador', pathMatch: 'full' },
-  { path: 'jugador', component: JugadorFormComponent },
-  { path: 'codigo', component: CodigoFormComponent },
-  { path: 'juego', component: JuegoComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: loginFormComponent },
+  { path: 'registrar', component: registrarFormComponent },
+  { path: 'tareas', component: tareasComponent },
 ];
