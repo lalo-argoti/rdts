@@ -1,16 +1,16 @@
  
 # Backen que conecta con la instancia PSQL
-```
- ./gradlew  build
-```
 
--pruebas unitarias
+
+# pruebas unitarias
 ```cli
 ./gradlew test --tests com.example.backend_prueba.BackendPruebaApplicationTests
 ```
 
-## Ejecutar paquete
+ Construir y ejecutar 
+ 
 ```java
+./gradlew  build
 java -jar build/libs/backend_prueba-0.0.1-SNAPSHOT.jar
 ```
 
