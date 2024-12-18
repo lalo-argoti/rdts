@@ -9,7 +9,7 @@ VARIABLES:
 
 
 COMANDOS:
-
+```sql
 sudo -u postgres psql
 CREATE DATABASE usuariosdb;
 CREATE USER usuarioapp WITH PASSWORD 'passwordsegura123';
