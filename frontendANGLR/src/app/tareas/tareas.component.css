@@ -1,27 +1,64 @@
-      .svg-container {
-            display: flex;
-            gap: 10px;
-            margin: 20px;
-        }
-        .svg-item {
-            cursor: pointer;
-            width: 100px;
-            height: 100px;
-            transition: transform 0.3s ease; /* Smooth rotation transition */
-        }
-        .svg-item:hover {
-            transform: rotate(360deg); /* Rotate 360 degrees on hover */
-        }
+/* Estilos generales del contenedor */
+.codigo-form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
 
-              .svg-item.clicked {
-            transform: scale(1.5); /* Scale up to 1.5 times on click */
-        }
-        #output {
-            margin-top: 20px;
-            font-size: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            width: 100px;
-            text-align: center;
-        }
+/* Estilo para la lista de tareas */
+.tasks-list {
+  margin-top: 20px;
+}
+
+.tasks-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tasks-list li {
+  background-color: #e9ecef;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Estilo para el selector de usuario */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.texto-em {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Estilo para los botones */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group button {
+  margin: 5px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
 
