@@ -1,11 +1,4 @@
-- [ ] Tarea 1
-- [x] Tarea 2 (completada)
 
-
-VARIABLES: 
-
-- my_secure_root_password ->autodescriptiva 
-- db -> nombre del docker
 
 
 COMANDOS:
