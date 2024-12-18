@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TareasComponent } from './tareas.component'; // Nombre de la clase con "T" mayúscula
 
-describe('TareasComponent', () => {  // También cambiamos aquí a "TareasComponent"
-  let component: TareasComponent;  // Uso de "T" mayúscula
-  let fixture: ComponentFixture<TareasComponent>;  // Uso de "T" mayúscula
+import { TareasComponent } from './tareas.component';
+
+describe('TareasComponent', () => {
+  let component: TareasComponent;
+  let fixture: ComponentFixture<TareasComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TareasComponent]  // "TareasComponent" con la "T" mayúscula
+      imports: [TareasComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TareasComponent);  // Uso de "T" mayúscula
+    fixture = TestBed.createComponent(TareasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
