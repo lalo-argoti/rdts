@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { FormsModule } from '@angular/forms';  // Asegúrate de importar FormsModule aquí
-import { ApiServiceTsService } from '../api.service.ts.service';  // Asegúrate de ajustar esta ruta si es necesario
+import { FormsModule } from '@angular/forms';  // Importa FormsModule para ngModel
+import { CommonModule } from '@angular/common'; // Importa CommonModule para ngIf, ngForOf
+import { ApiServiceTsService } from '../api.service.ts.service'; // Ajusta la ruta si es necesario
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -8,10 +9,9 @@ import { Subscription } from 'rxjs';
   standalone: true,  // Indica que este es un componente independiente
   templateUrl: './tareas.component.html',
   styleUrls: ['./tareas.component.css'],
-  imports: [FormsModule]  // Asegúrate de agregar FormsModule en imports aquí
+  imports: [FormsModule, CommonModule]  // Asegúrate de agregar CommonModule aquí
 })
 export class TareasComponent implements OnInit, OnDestroy {
-  // Definición de variables
   selectedUser: string = '';  // Para enlazar con ngModel
   users: string[] = ['Mis', 'usuario1', 'usuario2'];  // Lista de usuarios
   tasks: string[] = [];  // Tareas del usuario seleccionado
@@ -29,10 +29,7 @@ export class TareasComponent implements OnInit, OnDestroy {
     }
   }
 
-  // Método para obtener las tareas de un usuario
   getTasks(user: string) {
-    // Aquí agregas la lógica para obtener las tareas del usuario
-    // Simularemos con datos estáticos
     if (user === 'Mis') {
       this.tasks = ['Tarea 1', 'Tarea 2'];
     } else if (user === 'usuario1') {
@@ -40,5 +37,10 @@ export class TareasComponent implements OnInit, OnDestroy {
     } else if (user === 'usuario2') {
       this.tasks = ['Tarea de usuario 2', 'Tarea 2 de usuario 2'];
     }
+  }
+
+  // Función para eliminar una tarea de la lista
+  deleteTask(index: number) {
+    this.tasks.splice(index, 1); // Elimina la tarea en el índice especificado
   }
 }
