@@ -9,7 +9,7 @@
 ./gradlew test --tests com.example.backend_prueba.BackendPruebaApplicationTests
 ```
 
-### 
+## Ejecutar paquete
 ```java
 java -jar build/libs/backend_prueba-0.0.1-SNAPSHOT.jar
 ```
