@@ -4,6 +4,11 @@
  ./gradlew  build
 ```
 
+-pruebas unitarias
+```cli
+./gradlew test --tests com.example.backend_prueba.BackendPruebaApplicationTests
+```
+
 ### 
 ```java
 java -jar build/libs/backend_prueba-0.0.1-SNAPSHOT.jar
