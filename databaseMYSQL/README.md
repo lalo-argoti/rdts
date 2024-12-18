@@ -10,9 +10,12 @@ VARIABLES:
 
 COMANDOS:
 
-- Cnstruir: docker build -t db .
-- Correr: docker run -d   --name db   -e MYSQL_ROOT_PASSWORD=my_secure_root_password   -e MYSQL_DATABASE=my_database   -e MYSQL_USER=my_user   -e MYSQL_PASSWORD=my_secure_user_password   -p 3306:3306   mysql:8.0
-- acceder al entorno: docker exec -it db sh
-- Crea una base de datos para usuario sa segun el archivo adjunto "copia"
+sudo -u postgres psql
+CREATE DATABASE usuariosdb;
+CREATE USER usuarioapp WITH PASSWORD 'passwordsegura123';
+GRANT ALL PRIVILEGES ON DATABASE usuariosdb TO usuarioapp;
+
+psql -h localhost -p 5432 -U usuarioapp -d usuariosdb -f src/main/resources/db/migration/V1__initial_schema.sql
+passwordsegura123
 
 ![Vista esquemática](esquema.png)
