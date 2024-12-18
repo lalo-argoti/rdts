@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.backend_prueba.model.UserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-12-18T21:44:05" hostname="carlos-Inspiron-3493" time="0.045">
+  <properties/>
+  <testcase name="testGroupRelation()" classname="com.example.backend_prueba.model.UserTest" time="0.031"/>
+  <testcase name="testUserConstructorAndGetters()" classname="com.example.backend_prueba.model.UserTest" time="0.004"/>
+  <testcase name="testUserSetters()" classname="com.example.backend_prueba.model.UserTest" time="0.002"/>
+  <testcase name="testDefaultCreatedAt()" classname="com.example.backend_prueba.model.UserTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
